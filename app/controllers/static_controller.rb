@@ -1,6 +1,4 @@
-# app/controllers/static_controller.rb
-
-# Service to download ftp files from the server
+# frozen_string_literal: true
 
 class StaticController < ApplicationController
   def index; end

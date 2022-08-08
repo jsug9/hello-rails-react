@@ -1,15 +1,15 @@
 import React from "react"
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HelloWorld from "./HelloWorld";
 
 class App extends React.Component {
   render () {
     return (
       <BrowserRouter>
-        <Switch>
+        <Routes>
           <Route exact path='/' render = {() => ("Home!")} />
           <Route path='/hello' render = {() => <HelloWorld greeting="Friend" />} />
-        </Switch>
+        </Routes>
       </BrowserRouter>
     );
   }
