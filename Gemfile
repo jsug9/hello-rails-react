@@ -6,8 +6,12 @@ ruby '3.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.6'
 
+# Use React-Rails
 gem 'react-rails'
 gem 'net-smtp'
+
+# Use Rubocop
+gem 'rubocop', '>= 1.0', '< 2.0'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
