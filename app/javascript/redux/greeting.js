@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const getInitialGreeting = async () => {
+const fetchGreeting = async () => {
   const response = await axios.get('v1/greetings')
   return response.data
 }
@@ -12,7 +12,8 @@ const initialState = {
 const GET_GREETING_REQUEST = '/greeting/GET_GREETING_REQUEST';
 
 const getGreeting = async (dispatch) => {
-  const greeting = await getInitialGreeting();
+  const greeting = await fetchGreeting();
+  console.log(greeting)
   return dispatch({
     type: GET_GREETING_REQUEST,
     payload: greeting,
