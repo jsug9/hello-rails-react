@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const getInitialGreeting = async () => {
-  const response = await axios.get('Api/v1/greetings')
+  const response = await axios.get('v1/greetings')
   return response.data
 }
 

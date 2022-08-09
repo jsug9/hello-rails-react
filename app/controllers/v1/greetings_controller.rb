@@ -1,4 +1,4 @@
-class Api::V1::GreetingsController < ApplicationController
+class V1::GreetingsController < ApplicationController
   def index
     random = Random.new
     limit = Greeting.all.length
