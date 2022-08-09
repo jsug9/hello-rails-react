@@ -13,7 +13,6 @@ const GET_GREETING_REQUEST = '/greeting/GET_GREETING_REQUEST';
 
 const getGreeting = async (dispatch) => {
   const greeting = await fetchGreeting();
-  console.log(greeting)
   return dispatch({
     type: GET_GREETING_REQUEST,
     payload: greeting,
