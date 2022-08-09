@@ -7,10 +7,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Greeting.create(description: 'Hello World')
+Greeting.create(description: 'Hello World 1')
 Greeting.create(description: 'Hello World 2')
 Greeting.create(description: 'Hello World 3')
 Greeting.create(description: 'Hello World 4')
 Greeting.create(description: 'Hello World 5')
-Greeting.create(description: 'Hello World 6')
-Greeting.create(description: 'Hello World 7')
